@@ -14,6 +14,7 @@ It demonstrates API testing for GET, POST, PUT, and DELETE operations using the 
 * pytest
 * requests
 * GitHub
+* GitHub Actions
 
 ---
 
@@ -24,6 +25,9 @@ api-automation-framework/
 │
 ├── config/
 │   └── config.py
+│
+├── .github/workflows/
+│   └── tests.yml
 │
 ├── utils/
 │   ├── api_client.py
@@ -52,6 +56,11 @@ api-automation-framework/
 
 ## Pytest Configuration
 The project uses `pytest.ini` to define test discovery paths and configuration.
+
+---
+
+## CI/CD
+GitHub Actions workflow is implemented to automatically execute Pytest-based test suites on each code push, ensuring continuous validation of API functionality.
 
 ---
 
@@ -94,7 +103,6 @@ pytest
 
 ## Future Improvements
 
-* CI/CD integration (GitHub Actions)
 * Environment configuration (dev/staging)
 * Advanced reporting
 
